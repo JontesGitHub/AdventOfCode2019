@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class PartOne {
+public class PartTwo {
     /*
     1202 Program Alarm puzzle
      */
@@ -14,7 +14,7 @@ public class PartOne {
         String[] stringArray;
         int[] intCodeArray = null;
 
-        try (BufferedReader readTextFile = new BufferedReader(new FileReader("src/advent2/Intcode.txt"))) {
+        try (BufferedReader readTextFile = new BufferedReader(new FileReader("src/advent2/IntCodePartTwo.txt"))) {
             stringArray = readTextFile.readLine().split(",");
             intCodeArray = Arrays.stream(stringArray).mapToInt(Integer::parseInt).toArray();
 
@@ -39,6 +39,7 @@ public class PartOne {
                         break;
                     case 99:
                         System.out.println("Value at position 0: " + intCodeArray[0]);
+                        System.out.println("100 * noun: " + intCodeArray[1] + " + verb: " + intCodeArray[2] + " = " + ((100 * intCodeArray[1]) + intCodeArray[2]));
                         System.exit(0);
                 }
 
