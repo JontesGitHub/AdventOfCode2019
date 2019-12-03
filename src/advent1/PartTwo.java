@@ -5,6 +5,9 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class PartTwo {
+    /*
+    The Tyranny of the Rocket Equation
+     */
     public static void main(String[] args) {
         String tempLine;
         int mass;

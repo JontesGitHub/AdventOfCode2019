@@ -1,14 +1,14 @@
 package advent1;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
 
 
 public class PartOne {
-
+    /*
+       The Tyranny of the Rocket Equation
+        */
     public static void main(String[] args) {
         String tempLine;
         int mass;
